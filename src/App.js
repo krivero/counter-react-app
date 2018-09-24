@@ -40,9 +40,10 @@ class App extends Component {
         <NavBar />
         <main className="container">
           <Counters
+            counters={this.state.counters}
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
-            onDelete={this.handleDelete]}
+            onDelete={this.handleDelete}
           />
         </main>
       </React.Fragment>
